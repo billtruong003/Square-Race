@@ -1,0 +1,74 @@
+.toolbar-button-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 24px;
+}
+
+.toolbar-add-button {
+    unity-font-style: bold;
+    font-size: 12px;
+    width: 24px;
+    height: 22px;
+    margin-left: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
+    unity-text-align: middle-center;
+
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+
+    border-left-color: rgba(255,255,255,0.18);
+    border-right-color: rgba(255,255,255,0.18);
+    border-top-color: rgba(255,255,255,0.18);
+    border-bottom-color: rgba(255,255,255,0.18);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    background-color: rgba(40,40,40,0.85);
+    color: rgba(255,255,255,0.9);
+}
+
+.toolbar-add-button:hover {
+    background-color: rgba(55,55,55,0.95);
+}
+
+.toolbar-dropdown-button {
+    unity-font-style: bold;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 22px;
+    unity-text-align: middle-left;
+
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+
+    border-left-color: rgba(255,255,255,0.18);
+    border-right-color: rgba(255,255,255,0.18);
+    border-top-color: rgba(255,255,255,0.18);
+    border-bottom-color: rgba(255,255,255,0.18);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    background-color: rgba(40,40,40,0.85);
+    color: rgba(255,255,255,0.9);
+}
+
+.toolbar-dropdown-button:hover {
+    background-color: rgba(55,55,55,0.95);
+}

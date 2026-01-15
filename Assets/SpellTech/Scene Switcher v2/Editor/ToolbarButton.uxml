@@ -1,0 +1,10 @@
+
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="scene-switcher-toolbar-button-container" class="toolbar-button-container">
+
+        <ui:Label name="scene-switcher-toolbar-button" 
+                  class="toolbar-dropdown-button" 
+                  text="Scene ▼" 
+                  tooltip="Switch Bookmarked Scene" />
+    </ui:VisualElement>
+</ui:UXML>

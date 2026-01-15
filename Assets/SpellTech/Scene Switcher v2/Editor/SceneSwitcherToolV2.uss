@@ -1,0 +1,295 @@
+.main-container-v2.wide-layout-v2 {
+    flex-direction: row;
+}
+
+.main-container-v2.narrow-layout-v2 {
+    flex-direction: column;
+}
+
+/* ===== Responsive: keep header controls visible in narrow mode ===== */
+.main-container-v2.narrow-layout-v2 .filter-row-v2 {
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.main-container-v2.narrow-layout-v2 .right-panel-v2 {
+    width: 100%;
+    margin-top: 4px;
+    /* CHANGE: Set a fixed height (e.g., 180px or 200px) */
+    height: 200px; 
+    /* Prevent it from growing to fill empty space, let the Left Panel grow instead */
+    flex-grow: 0; 
+    flex-shrink: 0;
+}
+
+.main-container-v2 {
+    height: 100%;
+    background-color: #1e1e1e;
+    padding: 2px;
+}
+
+.box-v2 {
+    background-color: #2b2b2b;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #1a1a1a;
+    padding: 8px;
+    margin: 2px;
+}
+
+.left-panel-v2 {
+    flex-grow: 1;
+    min-width: 200px;
+    /* Important for nested scrolling in narrow layouts */
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden; /* Added to ensure list stays within bounds */
+}
+
+/* In wide mode, right panel has fixed width and auto height (fills vertical) */
+.right-panel-v2 { 
+    width: 200px; 
+    flex-shrink: 0; 
+    /* Ensure flex container properties allow internal scrollview to work */
+    flex-direction: column; 
+}
+
+
+.search-bar-v2 {
+    flex-direction: row;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 3px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    height: 36px;
+}
+
+.icon-16 { width: 16px; height: 16px; margin-right: 8px; }
+#search-field-v2 { flex: 1; background-color: transparent; border-width: 0; }
+
+/* ===== Filter row: wrap + min-width để không bị thụt/mất ===== */
+.filter-row-v2 {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+}
+
+/* Prevent tag dropdown from collapsing when window gets narrow */
+#tag-filter-dropdown-v2,
+.tag-filter-dropdown-v2 {
+    min-width: 130px;
+    flex-shrink: 0;
+}
+
+/* Mode dropdown also needs a minimum width to avoid "thụt" */
+#mode-dropdown-v2 {
+    min-width: 130px;
+}
+
+.add-tag-btn {
+    width: 28px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.flex-1 { flex: 1; }
+
+.list-wrapper-v2 {
+    flex-grow: 1;
+    background-color: #232323;
+    border-radius: 2px;
+    margin-top: 5px;
+    position: relative;
+    border-width: 1px;
+    border-color: #1a1a1a;
+    /* Allow ListView's internal ScrollView to work correctly */
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Ensure the scene list always occupies remaining height and shows a scrollbar when needed */
+#scene-list-v2 {
+    flex-grow: 1;
+    min-height: 0;
+}
+
+.scene-item-v2 {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 8px;
+    height: 32px;
+    border-bottom-width: 1px;
+    border-bottom-color: #2a2a2a;
+}
+
+.scene-item-v2:hover {
+    background-color: #3e3e3e;
+}
+
+#item-right { width: 130px; margin-left: 10px; }
+#item-left {
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+
+#item-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+#item-name {
+    font-size: 12px;
+    color: #e0e0e0;
+}
+#item-name.in-build-scene-text-v2  {
+    font-size: 12px;
+    color: rgba(0, 255, 47, 1);
+}
+
+/* Scene already included in Build Settings */
+.in-build-scene-text-v2 {
+    color: #8fd18f;
+}
+
+#item-tag-popup { height: 19px; font-size: 11px; margin: 0; }
+
+.section-title-v2 {
+    font-size: 10px;
+    color: #888;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    border-bottom-width: 1px;
+    border-bottom-color: #3a3a3a;
+    padding-bottom: 2px;
+}
+
+.btn-main { height: 32px;  margin-bottom: 4px; }
+.btn-side { height: 24px; margin-bottom: 2px; }
+
+/* Center icon + label inside our button rows */
+.btn-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Buttons (consistent alignment + no text wrap) ===== */
+.button-v2 {
+    height: 32px;
+    min-height: 32px;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+/* Bookmark actions: wrap into multiple columns when narrow */
+.bookmark-actions-v2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.bookmark-actions-v2 > Button {
+    min-width: 92px;
+    flex-shrink: 0;
+    margin: 0; /* override global Button margins inside this row */
+}
+
+.hint-v2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hint-text { color: #555; font-size: 14px; }
+
+/* Global Button styling (kept) */
+Button {
+    height: 28px;
+    margin: 3px 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(70, 70, 70);
+    border-color: rgb(40,40,40);
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+Button:hover { background-color: rgb(85, 85, 85); }
+
+.button-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    margin-right: 8px;
+}
+
+.button-scroll-view {
+    flex-grow: 1;
+    margin: -8px;
+    padding: 8px;
+}
+/* 1. Hàng bao quanh: Đảm bảo không vượt quá chiều ngang của panel cha */
+.field-row-v2 {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-right: 4px; /* Tạo một chút khoảng cách để không sát mép */
+    overflow: hidden;   /* Ngăn chặn nội dung bên trong đẩy khung ra ngoài */
+}
+
+/* 2. Nhãn (Source, Filter Tag): Cố định độ rộng để căn lề thẳng hàng */
+.field-label-inline-v2 {
+    width: 65px;
+    flex-shrink: 0; /* Tuyệt đối không cho nhãn bị co lại */
+    color: #c8c8c8;
+}
+
+/* 3. Container bao quanh Dropdown và nút + */
+.tag-filter-row-v2 {
+    flex-direction: row;
+    align-items: center;
+    flex: 1;          /* Chiếm hết phần còn lại của hàng */
+    min-width: 0;     /* CỰC KỲ QUAN TRỌNG: Cho phép container này co lại nhỏ hơn nội dung của nó */
+}
+
+/* 4. Dropdown: Phải có khả năng co lại */
+.tag-filter-dropdown-v2, 
+.field-input-v2 {
+    flex: 1;          /* Co giãn linh hoạt */
+    min-width: 20px;  /* Cho phép co lại rất nhỏ để nhường chỗ cho nút + */
+    margin-right: 2px;
+}
+
+/* 5. Nút +: Cố định kích thước, không cho phép biến đổi */
+.add-tag-btn {
+    width: 20px;
+    height: 18px;
+    flex: 0 0 auto;   /* Không giãn, không co, giữ đúng kích thước */
+    padding: 0;
+    margin: 0;
+}
+
+/* 6. Đảm bảo Panel trái không bị nội dung đẩy phình ra */
+.left-panel-v2 {
+    flex: 1;
+    min-width: 200px;
+    overflow: hidden;
+}

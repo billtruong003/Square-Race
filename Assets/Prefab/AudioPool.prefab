@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8163688246573359729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6429854628092047003}
+  - component: {fileID: 56820713324162721}
+  - component: {fileID: 4854527399050491700}
+  - component: {fileID: 4231368555939955096}
+  m_Layer: 0
+  m_Name: AudioPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6429854628092047003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8163688246573359729}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.48138, y: 2.41096, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &56820713324162721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8163688246573359729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f204f84a139efca45a8c316d089f1410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  _sfxSourcePrefab: {fileID: 1712498879802021413, guid: 75b0e16dafade9a4d80d92c1d51592c7, type: 3}
+  _poolSize: 100
+  _bgmSource: {fileID: 4854527399050491700}
+--- !u!82 &4854527399050491700
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8163688246573359729}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 0
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &4231368555939955096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8163688246573359729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9ef5eefd7cba64f8cf82d24558c33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MapAudioSequencer
+  _currentSong: Blue_DaBaDee
+  _bpmMultiplier: 1.3
+  _runtimeSequence:
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 1021b8f79e0b16e46b148448c496d57c, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 5c402bf29836101449ddea3e1698f720, type: 3}
+  - {fileID: 8300000, guid: 879d7ff03051e124d892c87cda2b477e, type: 3}
+  - {fileID: 8300000, guid: 879d7ff03051e124d892c87cda2b477e, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 90392eedcd903b74481ccef4befcde54, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 1021b8f79e0b16e46b148448c496d57c, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 66cfc7f471acee5409149c7f1133f569, type: 3}
+  - {fileID: 8300000, guid: 879d7ff03051e124d892c87cda2b477e, type: 3}
+  - {fileID: 8300000, guid: 1021b8f79e0b16e46b148448c496d57c, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 90392eedcd903b74481ccef4befcde54, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 1021b8f79e0b16e46b148448c496d57c, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 1021b8f79e0b16e46b148448c496d57c, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 5c402bf29836101449ddea3e1698f720, type: 3}
+  - {fileID: 8300000, guid: 879d7ff03051e124d892c87cda2b477e, type: 3}
+  - {fileID: 8300000, guid: 879d7ff03051e124d892c87cda2b477e, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 90392eedcd903b74481ccef4befcde54, type: 3}
+  - {fileID: 8300000, guid: a9570eeb13ceed842867a30be6f4534d, type: 3}
+  - {fileID: 8300000, guid: 1021b8f79e0b16e46b148448c496d57c, type: 3}
+  _baseBpm: 128
+  _beatDivision: 2
+  _globalVolume: 0.3
+  _audioSourcePrefab: {fileID: 1712498879802021413, guid: 75b0e16dafade9a4d80d92c1d51592c7, type: 3}
+  _poolSize: 20
+  _spatialBlend: 0
+  _pitchRandomness: 0
+  _sequenceFolder: Assets/Scripts/ToolGenMusic/GeneratedMusic_Ultimate/Blue_DaBaDee

@@ -1,0 +1,125 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="main-container-v2" class="main-container-v2">
+        <ui:VisualElement class="left-panel-v2 box-v2">
+            <ui:VisualElement class="header-v2">
+                <ui:VisualElement class="search-bar-v2">
+                    <ui:Image name="search-icon-v2" class="icon-16" />
+                    <ui:TextField name="search-field-v2" placeholder-text="Search scenes or tags..." class="flex-1" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="filter-row-v2">
+
+                    <!-- Row 1: Source (Sẽ nằm ngang nếu .field-row-v2 có flex-direction: row) -->
+                    <ui:VisualElement class="field-row-v2">
+                        <ui:Label text="Source" class="field-label-inline-v2" />
+                        <ui:DropdownField name="mode-dropdown-v2" label="" class="field-input-v2" />
+                    </ui:VisualElement>
+
+                    <!-- Row 2: Filter Tag + Dropdown + Nút + -->
+                    <ui:VisualElement class="field-row-v2">
+                        <ui:Label text="Filter Tag" class="field-label-inline-v2" />
+                        
+                        <ui:VisualElement class="tag-filter-row-v2">
+                            <ui:DropdownField name="tag-filter-dropdown-v2" label="" class="tag-filter-dropdown-v2" />
+                            <ui:Button name="add-tag-global-btn" text="+" tooltip="Add Global Tag" class="add-tag-btn" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+            <ui:VisualElement name="list-container-v2" class="list-wrapper-v2">
+                <ui:ListView name="scene-list-v2" />
+                <ui:VisualElement name="drag-hint" class="hint-v2">
+                    <ui:Label text="Drop Scene Assets Here to Bookmark" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="right-panel-v2 box-v2">
+            <ui:ScrollView mode="Vertical" class="button-scroll-view">
+
+                <ui:Label text="ACTIONS" class="section-title-v2" />
+
+                <ui:Button name="load-button-v2" class="btn-main button-v2">
+                    <ui:VisualElement class="btn-row">
+                        <ui:Image name="load-icon-v2" class="button-icon" />
+                        <ui:Label text="Load Single" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="additive-button-v2" class="btn-main button-v2">
+                    <ui:VisualElement class="btn-row">
+                        <ui:Image name="additive-icon-v2" class="button-icon" />
+                        <ui:Label text="Load Additive" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="ping-button-v2" class="btn-main button-v2">
+                    <ui:VisualElement class="btn-row">
+                        <ui:Image name="ping-icon-v2" class="button-icon" />
+                        <ui:Label text="Ping Asset" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="add-to-build-button-v2" class="btn-main button-v2">
+                    <ui:VisualElement class="btn-row">
+                        <ui:Image name="add-to-build-icon-v2" class="button-icon" />
+                        <ui:Label text="Add To Build" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Label text="BOOKMARKS" class="section-title-v2" />
+
+                <!-- Wrap để khi kéo hẹp vẫn hiển thị đủ (tự xuống hàng) -->
+                <ui:VisualElement class="button-scroll-view">
+                    <ui:Button name="bookmark-selected-button-v2" class="btn-main button-v2">
+                        <ui:VisualElement class="btn-row">
+                            <ui:Image name="bookmark-selected-icon-v2" class="button-icon" />
+                            <ui:Label text="Bookmark Selected" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:Button name="add-current-button-v2" class="btn-main button-v2">
+                        <ui:VisualElement class="btn-row">
+                            <ui:Image name="add-current-icon-v2" class="button-icon" />
+                            <ui:Label text="Add Current" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:Button name="remove-selected-button-v2" class="btn-main button-v2">
+                        <ui:VisualElement class="btn-row">
+                            <ui:Image name="remove-selected-icon-v2" class="button-icon" />
+                            <ui:Label text="Remove" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:Button name="clear-all-button-v2" class="btn-main button-v2">
+                        <ui:VisualElement class="btn-row">
+                            <ui:Image name="remove-all-icon-v2" class="button-icon" />
+                            <ui:Label text="Clear All" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                </ui:VisualElement>
+
+                <ui:VisualElement style="flex-grow: 1; height: 30px;" />
+
+                <ui:Button name="settings-button-v2" class="button-v2">
+                    <ui:VisualElement class="btn-row">
+                        <ui:Image name="settings-icon-v2" class="button-icon" />
+                        <ui:Label text="Settings" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="credits-button-v2" class="button-v2">
+                    <ui:VisualElement class="btn-row">
+                        <ui:Image name="credits-icon-v2" class="button-icon" />
+                        <ui:Label text="Credits" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

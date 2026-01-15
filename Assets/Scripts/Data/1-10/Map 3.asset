@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2c8ae773aaad14c9c0dbc4b2545647, type: 3}
+  m_Name: Map 3
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  LevelName: 3
+  SceneName: Map 3
+  Thumbnail: {fileID: 21300000, guid: 34bf61c5f2e3d34438f8e5cd60d4015b, type: 3}
+  Description: 
+  DifficultyRating: 1
+  Mode: 0
+  StagingSceneName: StagingScene
+  StagingRacerCount: 100
+  ColorMode: 1
+  RacerColorGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0.19607843, b: 0.19607843, a: 1}
+    key1: {r: 1, g: 1, b: 0.19607843, a: 1}
+    key2: {r: 0.19607843, g: 1, b: 0.19607843, a: 0}
+    key3: {r: 0, g: 1, b: 0.19607843, a: 0}
+    key4: {r: 0.19607843, g: 1, b: 1, a: 0}
+    key5: {r: 0.19607843, g: 0.19607843, b: 1, a: 0}
+    key6: {r: 1, g: 0.19607843, b: 1, a: 0}
+    key7: {r: 1, g: 0.19607843, b: 0.19607843, a: 0}
+    ctime0: 0
+    ctime1: 9830
+    ctime2: 19661
+    ctime3: 29491
+    ctime4: 39321
+    ctime5: 49151
+    ctime6: 55705
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  FixedColorSequence:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.33636326, b: 0, a: 1}
+  - {r: 0.3667524, g: 1, b: 0, a: 1}
+  - {r: 0.5499215, g: 0, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.47820973, a: 1}
+  - {r: 0, g: 0.8888173, b: 1, a: 1}
+  - {r: 0, g: 0.5171318, b: 1, a: 1}
+  - {r: 0, g: 0.19427681, b: 1, a: 1}
+  - {r: 0.19122791, g: 0, b: 1, a: 1}
+  - {r: 0.5754717, g: 0, b: 0, a: 1}
+  - {r: 0.73657894, g: 1, b: 0, a: 1}
+  - {r: 0.6062274, g: 0, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.79247665, a: 1}
+  - {r: 0.14438558, g: 1, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0.6839905, a: 1}
+  - {r: 0.678673, g: 1, b: 0, a: 1}
+  - {r: 0.4245283, g: 0.22210094, b: 0, a: 1}
+  - {r: 0.4716981, g: 0, b: 0.3730414, a: 1}
+  - {r: 0.016794853, g: 0, b: 0.5283019, a: 1}
+  - {r: 0, g: 0.4716981, b: 0.0030519827, a: 1}
+  RacerShapes:
+  - {fileID: 21300000, guid: 34bf61c5f2e3d34438f8e5cd60d4015b, type: 3}
+  DeathBodySprite: {fileID: 21300000, guid: f2d8e5a9d0fb96d4192411c43f183e8c, type: 3}
