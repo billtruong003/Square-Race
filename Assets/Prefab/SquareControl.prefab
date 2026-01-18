@@ -481,7 +481,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2073969372242185334}
@@ -537,10 +537,9 @@ MonoBehaviour:
   _isPermanentDeathBody: 1
   _bodyDespawnDelay: 3
   _deathSfx: {fileID: 8300000, guid: f99d3fc278ff02d4abc55b5484963a31, type: 3}
-  _musicalImpact: {fileID: 11400000, guid: b9a6034dba906f345a165b397083a570, type: 2}
   _sfxVolume: 1
   _moveSpeed: 3
-  _rayDistance: 0.16
+  _rayDistance: 0.32
   _obstacleLayer:
     serializedVersion: 2
     m_Bits: 3144

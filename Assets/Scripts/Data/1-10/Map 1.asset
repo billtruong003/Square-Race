@@ -19,8 +19,8 @@ MonoBehaviour:
   DifficultyRating: 1
   Mode: 0
   StagingSceneName: StagingScene
-  StagingRacerCount: 100
-  ColorMode: 1
+  StagingRacerCount: 50
+  ColorMode: 0
   RacerColorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 0.19607843, b: 0.19607843, a: 1}
