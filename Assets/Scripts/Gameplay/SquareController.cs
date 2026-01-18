@@ -311,6 +311,8 @@ public class SquareController : MonoBehaviour, IDamageable
 
         Sprite spriteToUse = _fallbackDeadSprite != null ? _fallbackDeadSprite : _originalSprite;
         _visuals.SetDeadState(spriteToUse, Color.Lerp(_myColor, Color.black, 0.3f));
+
+        _myCollider.enabled = false;
     }
 
     public Color GetColor() => _myColor;
